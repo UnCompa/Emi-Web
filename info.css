@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Caveat:wght@400..700&family=Indie+Flower&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-morado-pastel: #b19cd9;
+  --color-turquesa: #47d1d1;
+  --color-rosa-suave: #f4bfbf;
+  --color-gris-claro: #e0e0e0;
+  --color-blanco: #ffffff;
+  --color-amarillo-palido: #fffac8;
+  --color-verde-menta: #a1e7af;
+  --color-azul-claro: #add8e6;
+}
+
+body {
+  background-image: url("./imgs/back2.jpg");
+  background-size: 100%;
+  font-family: "Indie Flower", cursive;
+}
+.hero {
+  background: var(--color-blanco);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+.hero-content h1 {
+  font-family: "Anta", sans-serif;
+  font-size: clamp(3rem, 5vw + 1em, 5rem);
+  background: linear-gradient(135deg, var(--color-azul-claro), var(--color-morado-pastel));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hero 15s infinite linear alternate;
+}
+@keyframes hero {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -80rem 0;
+  }
+}
+i {
+  font-size: clamp(2.5rem, 3vw + 1em, 4rem);
+  background: linear-gradient(45deg, var(--color-turquesa), var(--color-verde-menta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-content p {
+  padding: .5em;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.hero-links {
+  display: flex;
+  gap: 16px;
+}
+.hero-links button {
+  border: none;
+  background: var(--color-verde-menta);
+  padding: 1em 2em;
+  border-radius: 16px;
+  font-size: bold;
+}
+.hero-links a {
+  color: #000;
+  text-decoration: none;
+}
+main {
+  height: 100%;
+}
+.timer1 {
+  width: 90vw;
+  height: max-content;
+  background: snow;
+  border-radius: 10px;
+  margin: 2em auto;
+  padding: 1em;
+}
+.timer1-head h2 {
+  text-align: center;
+}
+.timer1-head p {
+  text-align: center;
+}
+.timers1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.timer-box {
+  border: 2px solid var(--color-amarillo-palido);
+  background: #42445A;
+  text-align: center;
+  padding: .3em;
+  color: #fff;
+  width: max-content;
+  border-radius: 5px;
+  box-shadow: inset 0 0 20px #000;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor de Juego</title>
+  <!-- Incluye Atropos.js -->
+  <link rel="stylesheet" href="https://unpkg.com/atropos/dist/atropos.min.css">
+</head>
+
+<body>
+
+  <!-- Contenedor para las imágenes del juego -->
+  <div class="atropos">
+
+    <div class="atropos-scale">
+
+      <div class="atropos-rotate">
+
+        <div class="atropos-inner">
+
+          <!--
+
+Element with negative offset will move in reverse direction,
+
+making it appear behind the scene
+
+-->
+
+          <img src="./imgs/back.jpg" data-atropos-offset="-5" />
+
+          <!--
+
+Element with no offset will not move
+
+-->
+
+          <img src="image-middle.png" data-atropos-offset="0" />
+
+          <!--
+
+
+  <!-- Inicializa Atropos -->
+          <script type="module">
+            import Atropos from 'https://cdn.jsdelivr.net/npm/atropos@2/atropos.min.mjs'
+            new Atropos({
+              el: 'atropos',
+            });
+          </script>
+
+</body>
+
+</html>

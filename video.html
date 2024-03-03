@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de Video</title>
+  <!-- Incluye la librería Plyr -->
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+  <link rel="stylesheet" href="video.css">
+</head>
+<body>
+
+  <!-- Contenedor del reproductor -->
+  <video controls crossorigin playsinline poster="./imgs/Emi1.jpg">
+    <!-- Archivo de video -->
+    <source src="./videos/3.mp4" type="video/mp4" />
+    <!-- Si el navegador no es compatible -->
+    Tu navegador no soporta el elemento de video.
+  </video>
+  <audio controls crossorigin>
+    <!-- Archivo de video -->
+    <source src="./audios/1.mp3" type="audio/mp3" />
+    <!-- Si el navegador no es compatible -->
+    Tu navegador no soporta el elemento de video.
+  </audio>
+
+  <!-- Incluye la librería Plyr -->
+  <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+  <!-- Inicializa el reproductor -->
+  <script>
+    const audio = new Plyr('audio', {
+      accentColor: "#0af"
+    });
+    const player = new Plyr('video', {
+  controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
+  accentColor: '#ff0000'
+});
+  </script>
+
+</body>
+</html>

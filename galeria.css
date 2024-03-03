@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Caveat:wght@400..700&family=Indie+Flower&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-morado-pastel: #b19cd9;
+  --color-turquesa: #47d1d1;
+  --color-rosa-suave: #f4bfbf;
+  --color-gris-claro: #e0e0e0;
+  --color-blanco: #ffffff;
+  --color-amarillo-palido: #fffac8;
+  --color-verde-menta: #a1e7af;
+  --color-azul-claro: #add8e6;
+}
+
+body {
+  font-family: "Indie Flower", cursive;
+  background-image: url("./imgs/back5.jpg");
+  background-size: 100%;
+}
+.hero {
+  background: var(--color-blanco);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+.hero-content h1 {
+  font-family: "Anta", sans-serif;
+  font-size: clamp(3rem, 5vw + 1em, 5rem);
+  background: linear-gradient(135deg, var(--color-turquesa), var(--color-morado-pastel));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hero 12s infinite linear alternate;
+}
+@keyframes hero {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 80rem;
+  }
+}
+i {
+  font-size: clamp(2.5rem, 3vw + 1em, 4rem);
+  background: linear-gradient(45deg, var(--color-turquesa), var(--color-verde-menta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-content p {
+  padding: .5em;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.hero-links {
+  display: flex;
+  gap: 16px;
+}
+.hero-links button {
+  border: none;
+  background: var(--color-verde-menta);
+  padding: 1em 2em;
+  border-radius: 16px;
+  font-size: bold;
+}
+.hero-links a {
+  color: #000;
+  text-decoration: none;
+}
+main {
+  height: 100%;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  place-content: center;
+  margin: 2em 0em;
+  gap: 2em;
+}
+@media (max-width:764px) {
+  main {
+    margin: 2em 0em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  border: 2px solid white;
+  z-index: 10;
+}
+.card {
+  height: max-content;
+  width: 100%;
+  margin: auto;
+  padding: .5em;
+  border-radius: 3px;
+  border: 2px solid white;
+  background-color: #b19cd9;
+  position: relative;
+  overflow: hidden;
+  z-index: -6;
+  animation: pulse 2s infinite ease-in alternate;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #b19cd9;
+  }
+  100% {
+    background-color: #EAE0FF;
+  }
+}
