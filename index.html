@@ -1,276 +1,401 @@
 <!DOCTYPE html5>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- HTML Meta Tags -->
+    <title>Emi-Web | Landing page sobre Emily ❤</title>
+    <meta
+      name="description"
+      content="Una landing page con informacion de la chica Emily :D"
+    />
+    <meta name="keywords" content="Emily pagina, Emily pagina web, Emily vercel">
+    <meta name="author" content="UnCompa">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="robots" content="index,follow">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://emi-web.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Emi-Web | Landing page sobre Emily ❤" />
+    <meta
+      property="og:description"
+      content="Una landing page con informacion de la chica Emily :D"
+    />
+    <meta
+      property="og:image"
+      content="https://opengraph.b-cdn.net/production/documents/668ad003-69df-4ee0-aa33-6232052952db.jpg?token=cBhyq2btPNSvz-u5xlqtKD44bGxX2k19piUJOex31DQ&height=168&width=300&expires=33245487251"
+    />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="emi-web.vercel.app" />
+    <meta property="twitter:url" content="https://emi-web.vercel.app" />
+    <meta name="twitter:title" content="Emi-Web | Landing page sobre Emily ❤" />
+    <meta
+      name="twitter:description"
+      content="Una landing page con informacion de la chica Emily :D"
+    />
+    <meta
+      name="twitter:image"
+      content="https://opengraph.b-cdn.net/production/documents/668ad003-69df-4ee0-aa33-6232052952db.jpg?token=cBhyq2btPNSvz-u5xlqtKD44bGxX2k19piUJOex31DQ&height=168&width=300&expires=33245487251"
+    />
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0dd41c1b59.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <title>HTML</title>
-  <script src="./luxon.min.js"></script>
-  <script src="luxon.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/0dd41c1b59.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <div class="hero">
-    <div class="hero-img">
-      <img src="./imgs/Emi2.jpg" alt="">
+  <body>
+    <div class="hero">
+      <div class="hero-img">
+        <img src="./imgs/Emi2.jpg" alt="" />
+      </div>
+      <h1>EMILY</h1>
+      <p id="description" class="description"></p>
+      <span class="hero-arrow"><i class="fa-solid fa-arrow-down"></i></span>
     </div>
-    <h1>EMILY</h1>
-    <p id="description" class="description"></p>
-    <span class="hero-arrow"><i class="fa-solid fa-arrow-down"></i></span>
-  </div>
-  <main>
-    <section class="card-container">
-      <div class=" card">
-        <header class="title">
-          <i class="fa-solid fa-trophy"></i>
-          <h2>La mejor en todo</h2>
-        </header>
-        <div class="line"></div>
-        <p>"Ella es una persona introvertida y discreta en compañía de otros, con preferencias sencillas. No obstante, cuando se siente segura se transforma en una mujer carismática y alegre. Además, posee un talento excepcional para el arte del dibujo. En momentos de angustia, procura mantener la serenidad y busca actividades que le ayuden a relajarse, centrándose en superar los obstáculos.” </p>
-      </div>
-      <div class="card-img">
-        <img src="./imgs/Emi2.jpg" alt="./">
-      </div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-info"></i>
-          <h2>General</h2>
-        </header>
-        <div class="line"></div>
-        <p>Emily es una chica de 15 años que vive en Ecuador. Le encanta que le digan Emi o Estefy. Mide 1.70 metros y, bueno, es un poquito rellenita. Ahora mismo, está más o menos, ni muy bien ni muy mal. Su cumple es X/xx y, bueno, se siente igual, regular.</p>
-      </div>
-<div class="card-img">
-          <img src="./imgs/Emi1.jpg" alt="./">
+    <main>
+      <section class="card-container">
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-trophy"></i>
+            <h2>La mejor en todo</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            "Ella es una persona introvertida y discreta en compañía de otros,
+            con preferencias sencillas. No obstante, cuando se siente segura se
+            transforma en una mujer carismática y alegre. Además, posee un
+            talento excepcional para el arte del dibujo. En momentos de
+            angustia, procura mantener la serenidad y busca actividades que le
+            ayuden a relajarse, centrándose en superar los obstáculos.”
+          </p>
         </div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-smile"></i>
-          <h2>Cualidades</h2>
-        </header>
-        <div class="line"></div>
-        <p>En cuanto a cómo es, pues es tímida, sencilla y muy cariñosa. Dibuja súper bonito, es lo que más le gusta hacer. Cuando las cosas se ponen difíciles, intenta mantener la calma y buscar algo para relajarse, siempre tratando de superar los problemas.</p>
-      </div>
-<div class="card-img">
-  <img src="./imgs/Emi1.jpg" alt="./">
-</div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-paint-brush"></i>
-          <h2>Habilidades</h2>
-        </header>
-        <div class="line"></div>
-        <p>Emily tiene un talento especial para el dibujo, es algo que la apasiona. Además, le gusta escuchar música, intentar bailar y jugar a videojuegos. Se siente especialmente orgullosa de haber pasado el juego Outlast, ¡a pesar del miedo que le daba!</p>
-      </div>
-<div class="card-img">
-  <img src="./imgs/Emi1.jpg" alt="./">
-</div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-map-marked-alt"></i>
-          <h2>Sus Experiencias</h2>
-        </header>
-        <div class="line"></div>
-        <p>A pesar de su timidez, Emily ha tenido algunas experiencias difíciles debido al bullying, lo que la ha hecho sentirse sola en ocasiones. Sin embargo, cuenta con el apoyo incondicional de su gran amiga Sam, quien siempre está ahí para ella.</p>
-      </div>
-<div class="card-img">
-  <img src="./imgs/Emi1.jpg" alt="./">
-</div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-users"></i>
-          <h2>Relaciones</h2>
-        </header>
-        <div class="line"></div>
-        <p>Las personas más importantes en la vida de Emily son su familia y su gran amiga Sam. Al principio puede ser un poco reservada, pero una vez que toma confianza, se entrega por completo a sus relaciones. Valora mucho el trato amable y el respeto en las relaciones.</p>
-      </div>
-<div class="card-img">
-  <img src="./imgs/Emi1.jpg" alt="./">
-</div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-hands-helping"></i>
-          <h2>Valores</h2>
-        </header>
-        <div class="line"></div>
-        <p>Emily tiene como valores fundamentales el respeto, la amabilidad y el deseo de ayudar a los demás. Se guía por la filosofía de vida que dice: "Nada es verdad, todo está permitido". Esto la lleva a reaccionar de manera positiva en todas las situaciones.</p>
-      </div>
-<div class="card-img">
-  <img src="./imgs/Emi1.jpg" alt="./">
-</div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-gem"></i>
-          <h2>Bienes Preciosos</h2>
-        </header>
-        <div class="line"></div>
-        <p>Lo que más valora Emily son las pequeñas cosas de la vida, como el apoyo de su familia, la amistad de Sam y la capacidad de dibujar. Estas son las cosas que considera más valiosas y significativas en su vida.</p>
-      </div>
-<div class="card-img">
-  <img src="./imgs/Emi1.jpg" alt="./">
-</div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <h2>Educación</h2>
-        </header>
-        <div class="line"></div>
-        <p>Emily está cursando la educación secundaria y su objetivo principal en este momento es graduarse con buenos resultados. Le gusta aprender sobre historia y arte, y espera seguir desarrollando sus habilidades en dibujo en el futuro.</p>
-      </div>
-<div class="card-img">
-  <img src="./imgs/Emi1.jpg" alt="./">
-</div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-medkit"></i>
-          <h2>Salud</h2>
-        </header>
-        <div class="line"></div>
-        <p>En cuanto a su salud, Emily procura mantenerse activa y comer de manera equilibrada. Aunque a veces se siente estresada por la escuela y otras responsabilidades, trata de encontrar tiempo para relajarse y cuidar de sí misma.</p>
-      </div>
-<div class="card-img">
-  <img src="./imgs/Emi1.jpg" alt="./">
-</div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-heart-broken"></i>
-          <h2>Debilidades</h2>
-        </header>
-        <div class="line"></div>
-        <p>Hay algunas cosas que asustan a Emily, como los insectos mortales, y ha vivido situaciones aterradoras, como escuchar ruidos extraños cuando está sola. Cuando se siente mal, acude a su gran amiga Sam en busca de apoyo y consuelo.</p>
-      </div>
-      <div class="card-img">
-        <img src="./imgs/Emi1.jpg" alt="./">
-      </div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-heart"></i>
-          <h2>Defectos</h2>
-        </header>
-        <div class="line"></div>
-        <p>A pesar de admirar su habilidad para el dibujo, Emily no está completamente satisfecha consigo misma debido a su timidez y falta de confianza. Aunque le gusta su cuerpo, cree que podría mejorarlo. Además, prefiere evitar sentir emociones como el miedo y la depresión.</p>
-      </div>
-      <div class="card-img">
-        <img src="./imgs/Emi1.jpg" alt="./">
-      </div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-clock"></i>
-          <h2>Tiempo</h2>
-        </header>
-        <div class="line"></div>
-        <p>Emily no tiene un horario fijo para distribuir su tiempo entre el trabajo, la familia y su tiempo personal. Su prioridad en este momento es graduarse. Aunque reconoce que no es muy organizada con la administración del tiempo, está trabajando en mejorar en ese aspecto.</p>
-      </div>
-<div class="card-img">
-        <img src="./imgs/Emi1.jpg" alt="./">
-      </div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-brain"></i>
-          <h2>Pasiones o Gustos</h2>
-        </header>
-        <div class="line"></div>
-        <p>Emily encuentra mucha felicidad en sus pasatiempos. Le encanta jugar, dibujar y ver contenido multimedia. Sus temas favoritos son los videojuegos, la música y la historia en general. Aunque tiene muchas responsabilidades, siempre saca tiempo para disfrutar de sus pasiones después de cumplir con sus deberes.</p>
-      </div>
-      <div class="card-img">
-        <img src="./imgs/Emi1.jpg" alt="./">
-      </div>
-    </section>
-    <div class="card-title">
-      <h3>Mas contenido</h3>
-    </div>
-    <section class="card-links">
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-info"></i>
-          <h2>Información</h2>
-        </header>
-        <div class="line"></div>
-        <p>En esta seccion hay Información sobre fechas importantes, has click en el boton para ir</p>
-        <div class="more">
-          <a href="/info.html">
-            <span>Ver más</span>
-          </a>
+        <div class="card-img">
+          <img src="./imgs/Emi2.jpg" alt="./" />
         </div>
-      </div>
-      <div class="card-img">
-        <img src="./imgs/Emi1.jpg" alt="./">
-      </div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-image"></i>
-          <h2>Galeria</h2>
-        </header>
-        <div class="line"></div>
-        <p>Una seccion con fotos sobre Emily o cosas que destaca ella aqui:</p>
-        <div class="more">
-          <a href="/galeria.html">
-            <span>Ver más</span>
-          </a>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-info"></i>
+            <h2>General</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Emily es una chica de 15 años que vive en Ecuador. Le encanta que le
+            digan Emi o Estefy. Mide 1.70 metros y, bueno, es un poquito
+            rellenita. Ahora mismo, está más o menos, ni muy bien ni muy mal. Su
+            cumple es X/xx y, bueno, se siente igual, regular.
+          </p>
         </div>
-      </div>
-      <div class="card-img">
-        <img src="./imgs/Emi2.jpg" alt="./">
-      </div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-music"></i>
-          <h2>Musicas</h2>
-        </header>
-        <div class="line"></div>
-        <p>Una seccion con las canciones favoritas de emi, solo unas cuantas</p>
-        <div class="more">
-          <a href="/music.html">
-            <span>Ver más</span>
-          </a>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
         </div>
-      </div>
-      <div class="card-img">
-        <img src="./imgs/Emi2.jpg" alt="./">
-      </div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-play"></i>
-          <h2>Juegos</h2>
-        </header>
-        <div class="line"></div>
-        <p>Aqui habra un catalogo de videjuegos que Emily le gusta, son sus favoritos</p>
-        <div class="more">
-          <a href="/juegos.html">
-            <span>Ver más</span>
-          </a>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-smile"></i>
+            <h2>Cualidades</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            En cuanto a cómo es, pues es tímida, sencilla y muy cariñosa. Dibuja
+            súper bonito, es lo que más le gusta hacer. Cuando las cosas se
+            ponen difíciles, intenta mantener la calma y buscar algo para
+            relajarse, siempre tratando de superar los problemas.
+          </p>
         </div>
-      </div>
-      <div class="card-img">
-        <img src="./imgs/Emi2.jpg" alt="./">
-      </div>
-      <div class="card">
-        <header class="title">
-          <i class="fa-solid fa-video"></i>
-          <h2>Videos</h2>
-        </header>
-        <div class="line"></div>
-        <p>Aqui habra un catalogo de videjuegos que Emily le gusta, son sus favoritos</p>
-        <div class="more">
-          <a href="/video.html">
-            <span>Ver más</span>
-          </a>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
         </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-paint-brush"></i>
+            <h2>Habilidades</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Emily tiene un talento especial para el dibujo, es algo que la
+            apasiona. Además, le gusta escuchar música, intentar bailar y jugar
+            a videojuegos. Se siente especialmente orgullosa de haber pasado el
+            juego Outlast, ¡a pesar del miedo que le daba!
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-map-marked-alt"></i>
+            <h2>Sus Experiencias</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            A pesar de su timidez, Emily ha tenido algunas experiencias
+            difíciles debido al bullying, lo que la ha hecho sentirse sola en
+            ocasiones. Sin embargo, cuenta con el apoyo incondicional de su gran
+            amiga Sam, quien siempre está ahí para ella.
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-users"></i>
+            <h2>Relaciones</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Las personas más importantes en la vida de Emily son su familia y su
+            gran amiga Sam. Al principio puede ser un poco reservada, pero una
+            vez que toma confianza, se entrega por completo a sus relaciones.
+            Valora mucho el trato amable y el respeto en las relaciones.
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-hands-helping"></i>
+            <h2>Valores</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Emily tiene como valores fundamentales el respeto, la amabilidad y
+            el deseo de ayudar a los demás. Se guía por la filosofía de vida que
+            dice: "Nada es verdad, todo está permitido". Esto la lleva a
+            reaccionar de manera positiva en todas las situaciones.
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-gem"></i>
+            <h2>Bienes Preciosos</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Lo que más valora Emily son las pequeñas cosas de la vida, como el
+            apoyo de su familia, la amistad de Sam y la capacidad de dibujar.
+            Estas son las cosas que considera más valiosas y significativas en
+            su vida.
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Educación</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Emily está cursando la educación secundaria y su objetivo principal
+            en este momento es graduarse con buenos resultados. Le gusta
+            aprender sobre historia y arte, y espera seguir desarrollando sus
+            habilidades en dibujo en el futuro.
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-medkit"></i>
+            <h2>Salud</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            En cuanto a su salud, Emily procura mantenerse activa y comer de
+            manera equilibrada. Aunque a veces se siente estresada por la
+            escuela y otras responsabilidades, trata de encontrar tiempo para
+            relajarse y cuidar de sí misma.
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-heart-broken"></i>
+            <h2>Debilidades</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Hay algunas cosas que asustan a Emily, como los insectos mortales, y
+            ha vivido situaciones aterradoras, como escuchar ruidos extraños
+            cuando está sola. Cuando se siente mal, acude a su gran amiga Sam en
+            busca de apoyo y consuelo.
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-heart"></i>
+            <h2>Defectos</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            A pesar de admirar su habilidad para el dibujo, Emily no está
+            completamente satisfecha consigo misma debido a su timidez y falta
+            de confianza. Aunque le gusta su cuerpo, cree que podría mejorarlo.
+            Además, prefiere evitar sentir emociones como el miedo y la
+            depresión.
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-clock"></i>
+            <h2>Tiempo</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Emily no tiene un horario fijo para distribuir su tiempo entre el
+            trabajo, la familia y su tiempo personal. Su prioridad en este
+            momento es graduarse. Aunque reconoce que no es muy organizada con
+            la administración del tiempo, está trabajando en mejorar en ese
+            aspecto.
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-brain"></i>
+            <h2>Pasiones o Gustos</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Emily encuentra mucha felicidad en sus pasatiempos. Le encanta
+            jugar, dibujar y ver contenido multimedia. Sus temas favoritos son
+            los videojuegos, la música y la historia en general. Aunque tiene
+            muchas responsabilidades, siempre saca tiempo para disfrutar de sus
+            pasiones después de cumplir con sus deberes.
+          </p>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+      </section>
+      <div class="card-title">
+        <h3>Mas contenido</h3>
       </div>
-      <div class="card-img">
-        <img src="./imgs/Emi2.jpg" alt="./">
-      </div>
-    </section>
-  </main>
-</body>
-<script src="main.js"></script>
-
+      <section class="card-links">
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-info"></i>
+            <h2>Información</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            En esta seccion hay Información sobre fechas importantes, has click
+            en el boton para ir
+          </p>
+          <div class="more">
+            <a href="/info.html">
+              <span>Ver más</span>
+            </a>
+          </div>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi1.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-image"></i>
+            <h2>Galeria</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Una seccion con fotos sobre Emily o cosas que destaca ella aqui:
+          </p>
+          <div class="more">
+            <a href="/galeria.html">
+              <span>Ver más</span>
+            </a>
+          </div>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi2.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-music"></i>
+            <h2>Musicas</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Una seccion con las canciones favoritas de emi, solo unas cuantas
+          </p>
+          <div class="more">
+            <a href="/music.html">
+              <span>Ver más</span>
+            </a>
+          </div>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi2.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-play"></i>
+            <h2>Juegos</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Aqui habra un catalogo de videjuegos que Emily le gusta, son sus
+            favoritos
+          </p>
+          <div class="more">
+            <a href="/juegos.html">
+              <span>Ver más</span>
+            </a>
+          </div>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi2.jpg" alt="./" />
+        </div>
+        <div class="card">
+          <header class="title">
+            <i class="fa-solid fa-video"></i>
+            <h2>Videos</h2>
+          </header>
+          <div class="line"></div>
+          <p>
+            Aqui habra un catalogo de videjuegos que Emily le gusta, son sus
+            favoritos
+          </p>
+          <div class="more">
+            <a href="/video.html">
+              <span>Ver más</span>
+            </a>
+          </div>
+        </div>
+        <div class="card-img">
+          <img src="./imgs/Emi2.jpg" alt="./" />
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="main.js"></script>
 </html>
