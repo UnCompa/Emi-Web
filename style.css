@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Caveat:wght@400..700&family=Indie+Flower&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Caveat:wght@400..700&family=Indie+Flower&display=swap");
 
 * {
   padding: 0 0 0 0;
@@ -10,7 +10,6 @@ body {
   background-image: url("./imgs/back.jpg");
   background-size: cover;
   backdrop-filter: brightness(60%);
-
 }
 
 :root {
@@ -26,7 +25,6 @@ body {
 
 .hero {
   height: 100vh;
-  width: 100vw;
   background: #0005;
   color: #fff;
   display: flex;
@@ -36,32 +34,58 @@ body {
 }
 
 .hero-img {
-  width: 50vw;
-  height: 50vw;
-  background: linear-gradient(0deg, var(--color-verde-menta), var(--color-turquesa));
-  padding: 5px;
-  animation: heroA .5s infinite ease-out;
+  min-width: 20vw;
+  min-height: 20vw;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(
+    0deg,
+    var(--color-verde-menta),
+    var(--color-turquesa)
+  );
+  padding: .5em;
+  animation: heroA 0.5s infinite ease-out;
 }
 
 @keyframes heroA {
   0% {
-    background: linear-gradient(0deg, var(--color-verde-menta), var(--color-turquesa));
+    background: linear-gradient(
+      0deg,
+      var(--color-verde-menta),
+      var(--color-turquesa)
+    );
   }
 
   25% {
-    background: linear-gradient(90deg, var(--color-verde-menta), var(--color-turquesa));
+    background: linear-gradient(
+      90deg,
+      var(--color-verde-menta),
+      var(--color-turquesa)
+    );
   }
 
   50% {
-    background: linear-gradient(180deg, var(--color-verde-menta), var(--color-turquesa));
+    background: linear-gradient(
+      180deg,
+      var(--color-verde-menta),
+      var(--color-turquesa)
+    );
   }
 
   75% {
-    background: linear-gradient(270deg, var(--color-verde-menta), var(--color-turquesa));
+    background: linear-gradient(
+      270deg,
+      var(--color-verde-menta),
+      var(--color-turquesa)
+    );
   }
 
   100% {
-    background: linear-gradient(360deg, var(--color-verde-menta), var(--color-turquesa));
+    background: linear-gradient(
+      360deg,
+      var(--color-verde-menta),
+      var(--color-turquesa)
+    );
   }
 }
 
@@ -77,7 +101,11 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: clamp(3rem, 5vw + 1em, 5rem);
-  background: linear-gradient(45deg, var(--color-morado-pastel), var(--color-rosa-suave));
+  background: linear-gradient(
+    45deg,
+    var(--color-morado-pastel),
+    var(--color-rosa-suave)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -94,57 +122,67 @@ p {
   font-style: normal;
   text-align: center;
 }
+.description {
+  font-size: clamp(1rem, 2vw + 1em, 1.5rem);
+}
 
 .hero-arrow {
   font-size: clamp(1.5rem, 2vw + 1em, 3rem);
-  margin: 1em 0;
+  margin: 1em 0em;
   animation: pulse 2s infinite ease;
 }
 
 @keyframes pulse {
   0% {
     filter: brightness(100%);
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
 
   50% {
     filter: brightness(50%);
-    transform: translateY(16px)
+    transform: translateY(16px);
   }
 
   100% {
     filter: brightness(100%);
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
 }
 
-main {
-  height: 100%;
-}
-
 .card-container {
-  margin: 2em 1em;
+  padding: 1.5em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  place-content: center;
   gap: 2em;
 }
 
-@media (max-width:764px) {
+@media (max-width: 1024px) {
   .card-container {
-    margin: 2em 1em;
+    padding: 1em;
+    margin: 3em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+}
+@media (max-width: 624px) {
+  .card-container {
+    padding: 0em;
+    margin: 2em 3em;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1em;
+    gap: 2em 0em;
   }
 }
 
 .card {
-  background: #30313B;
+  background: #30313b;
   height: max-content;
   width: 100%;
   border-radius: 5px;
-  padding: .6em;
+  padding: 0.6em;
   color: #fff;
   box-shadow: 0 0 50px var(--color-morado-pastel);
 }
@@ -152,26 +190,35 @@ main {
 .title {
   display: flex;
   align-items: center;
-  gap: 0 .3em;
-  padding: .3em .6em;
+  gap: 0 0.3em;
+  padding: 0.3em 0.6em;
 }
 .line {
   width: 50%;
   height: 3px;
-  background: linear-gradient(to left, var(--color-morado-pastel), var(--color-rosa-suave));
-  margin: .3em .6em;
+  background: linear-gradient(
+    to left,
+    var(--color-morado-pastel),
+    var(--color-rosa-suave)
+  );
+  margin: 0.3em 0.6em;
   border-radius: 3px;
 }
 .title i {
-  font-size: clamp(.5rem, 2vw + 1em, 2rem);
-  background: linear-gradient(45deg, var(--color-morado-pastel), var(--color-rosa-suave));
+  padding: 0em .1em;
+  font-size: clamp(0.5rem, 2vw + 1em, 2rem);
+  background: linear-gradient(
+    45deg,
+    var(--color-morado-pastel),
+    var(--color-rosa-suave)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .card p {
-  font-size: clamp(.8rem, 1vw + 1em, 1.2rem);
-  padding: .1em .5em;
+  font-size: clamp(0.8rem, 1vw + 1em, 1.2rem);
+  padding: 0.1em 0.5em;
   text-align: start;
   text-wrap: pretty;
   font-weight: 600;
@@ -182,7 +229,7 @@ main {
   padding: 1em;
   height: 100%;
   width: 100%;
-  background: #30313B;
+  background: #30313b;
   border-radius: 5px;
   box-shadow: 0 0 50px var(--color-morado-pastel);
 }
@@ -191,67 +238,116 @@ main {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   border-radius: 5px;
   border: 3px solid var(--color-morado-pastel);
   filter: brightness(90%) contrast(110%) saturate(150%);
 }
+
 .card-links {
-  width: 100vw;
-  margin: 1em 0;
-  padding: 1.5em 1em;
+  padding: 2em;
   background-image: url("./imgs/back3.jpg");
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  gap: 3em;
 }
-.card-links .card-title {
-  background: var(--color-verde-menta);
-}
-@media (min-width:760px) {
-  .card-links .card-title {
-    grid-column: 1 / span 2;
+
+@media (max-width: 1024px) {
+  .card-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
   }
+}
+@media (max-width: 624px) {
+  .card-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em 0em;
+  }
+}
+.card-title {
+  width: 100%;
+  margin: auto;
+  background: var(--color-verde-menta);
 }
 
 .card-title h3 {
   text-align: center;
-  padding: .5em 0em;
+  padding: 0.2em 0em;
   font-family: "Anta", sans-serif;
-  font-size: clamp(2.5rem, 3vw + 1em, 4rem);
+  font-size: clamp(2rem, 2vw + 1em, 3rem);
 }
-.card-links .card{
-  background: #F9F9FF;
+.card-links .card {
+  border: 2px solid var(--color-turquesa);
   height: max-content;
   width: 100%;
   border-radius: 5px;
-  padding: .6em;
-  color: #000;
-  box-shadow: 0 0 25px var(--color-azul-claro);
+  padding: 0.6em;
+  color: #fff;
+  background-color: transparent;
+  box-shadow: 0 0 20px var(--color-azul-claro);
 }
 .card-links .card p {
-  color: #000;
+  color: #fff;
 }
 .card-links .card-img {
   padding: 1em;
   height: 100%;
   width: 100%;
-  background: #F9F9FF;
+  background-color: transparent;
+  border: 2px solid #f1f1f1;
   border-radius: 5px;
   box-shadow: 0 0 30px var(--color-azul-claro);
 }
 .card-links img {
-  border: 3px solid var(--color-azul-claro);
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
 }
-
-.more button {
-  border: none;
-  background: var(--color-azul-claro);
-  padding: 1em 2em;
-  border-radius: 3px;
-  font-size: bold;
+.card-links i {
+  padding: 0em .1em;
+  font-size: clamp(0.5rem, 2vw + 1em, 2rem);
+  background: linear-gradient(
+    45deg,
+    var(--color-azul-claro),
+    var(--color-turquesa)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-links .line {
   width: 50%;
-  margin: 1em 1em;
+  height: 3px;
+  background: linear-gradient(
+    to left,
+    var(--color-azul-claro),
+    var(--color-turquesa)
+  );
+  margin: 0.3em 0.6em;
+  border-radius: 3px;
 }
 .more a {
-  color: #000;
+  display: block;
+  height: 100%;
+  border: 2px solid var(--color-turquesa);
+  padding: .5em .8em;
+  margin: 1em .5em;
+  text-align: center;
+  border-radius: 10px;
   text-decoration: none;
-  font-weight: bold;
+  transition: all 200ms;
+}
+.more a:hover {
+  background: var(--color-turquesa);
+}
+.more a:active {
+  background: var(--color-turquesa);
+}
+.more span {
+  font-family: "Indie Flower", cursive;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: clamp(1rem, 1vw + 1em, 2rem);
 }
