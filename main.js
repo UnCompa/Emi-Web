@@ -3,14 +3,13 @@ console.log('Hello World!');
 ScrollReveal().reveal('.card', {
   origin: "left",
   distance: "100px",
-  reset: true,
   opacity: 0.1
 })
 
 ScrollReveal().reveal('.card-img', {
   origin: "bottom",
   distance: "100px",
-  reset: true,
+  opacity: 0.1
 })
 
 var options = {
