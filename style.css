@@ -102,6 +102,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: clamp(2rem, 3vw + 1em, 4rem);
+  text-wrap: pretty;
   background: linear-gradient(
     45deg,
     var(--color-morado-pastel),
