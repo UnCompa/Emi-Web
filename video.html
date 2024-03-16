@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reproductor de Video</title>
+  <title>Videos | Lo mejor</title>
   <!-- Incluye la librería Plyr -->
   <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
   <link rel="stylesheet" href="video.css">
 </head>
+
 <body>
-
-  <!-- Contenedor del reproductor -->
-  <video controls crossorigin playsinline poster="./imgs/Emi1.jpg">
-    <!-- Archivo de video -->
-    <source src="./videos/3.mp4" type="video/mp4" />
-    <!-- Si el navegador no es compatible -->
-    Tu navegador no soporta el elemento de video.
-  </video>
-  <audio controls crossorigin>
-    <!-- Archivo de video -->
-    <source src="./audios/1.mp3" type="audio/mp3" />
-    <!-- Si el navegador no es compatible -->
-    Tu navegador no soporta el elemento de video.
-  </audio>
-
-  <!-- Incluye la librería Plyr -->
-  <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
-  <!-- Inicializa el reproductor -->
-  <script>
-    const audio = new Plyr('audio', {
-      accentColor: "#0af"
-    });
-    const player = new Plyr('video', {
-  controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
-  accentColor: '#ff0000'
-});
-  </script>
-
+  <div class="hero">
+    <div class="hero-content">
+      <i class="fa-solid fa-star"></i>
+      <h1>Videos</h1>
+      <p>Los videojuegos favoritos de Emily</p>
+      <div class="hero-links">
+        <button><a href="/index.html">Inicio</a></button>
+        <button>
+          <a href="/galeria.html">Galeria</a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <main>
+    <video controls crossorigin src="./videos/3.mp4"></video>
+    <audio controls crossorigin>
+      <source src="./audios/1.mp3" type="audio/mp3" />
+      Tu navegador no soporta el elemento de video.
+    </audio>
+  </main>
 </body>
+<script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+<script src="video.js" type="text/javascript" charset="utf-8"></script>
+
 </html>

@@ -117,7 +117,7 @@ h2 {
 }
 
 p {
-  font-family: "Indie Flower", cursive;
+  font-family: "Indie Flower", -apple-system, cursive;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -189,9 +189,10 @@ p {
 
 .title {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 0 0.3em;
-  padding: 0.3em 0.6em;
+  padding: 0.2em 0.3em;
 }
 .line {
   width: 50%;
@@ -201,7 +202,7 @@ p {
     var(--color-morado-pastel),
     var(--color-rosa-suave)
   );
-  margin: 0.3em 0.6em;
+  margin: .6em;
   border-radius: 3px;
 }
 .title i {

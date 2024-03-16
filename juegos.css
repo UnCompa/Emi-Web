@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Caveat:wght@400..700&family=Indie+Flower&display=swap');
 * {
   padding: 0;
@@ -19,10 +18,10 @@
 body {
   background-image: url("./imgs/back3.jpg");
   background-size: 100%;
-  font-family: "Anta", cursive;
+  font-family: "Indie Flower", cursive;
 }
 .hero {
-  background: radial-gradient(circle, var(--color-azul-claro),#000);
+  background: radial-gradient(circle, var(--color-morado-pastel),#000);
   height: 100vh;
   display: grid;
   place-items: center;
@@ -37,7 +36,7 @@ body {
 .hero-content h1 {
   font-family: "Anta", sans-serif;
   font-size: clamp(3rem, 5vw + 1em, 5rem);
-  background: linear-gradient(135deg, var(--color-azul-claro), var(--color-blanco));
+  background: linear-gradient(135deg, var(--color-azul-claro), var(--color-morado-pastel));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: hero 15s infinite linear alternate;
@@ -60,7 +59,6 @@ i {
   padding: .5em;
   text-align: center;
   font-size: 1.2rem;
-  font-family: "Indie Flower", cursive;
 }
 .hero-links {
   display: flex;
@@ -93,7 +91,39 @@ main {
     gap: 3em;
   }
 }
-video {
+.card {
+  background: #42445A;
+  padding: 0.3em;
+  border: 2px solid #FF0202;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px #0005;
+  transition: all .2s;
+}
+.card-img {
+  padding: .5em;
+  border-radius: 5px;
+}
+.card-img img {
+  height: 100%;
   width: 100%;
-  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-title {
+  color: #fff;
+  font-family: "Anta", sans-serif;
+  text-align: center;
+  font-size: clamp(1.5rem, 1vw + 1em, 2rem);
+  line-height: 1em;
+  padding: 0 0 .5em 0;
+}
+.card:hover {
+  border: 2px solid var(--color-azul-claro);
+  box-shadow: 0 0 50px var(--color-azul-claro);
+  transform: translateY(-50px) scale(103%);
+}
+.card:active {
+  border: 2px solid var(--color-azul-claro);
+  box-shadow: 0 0 50px var(--color-azul-claro);
+  transform: translateY(-50px) scale(103%);
 }
