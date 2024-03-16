@@ -90,6 +90,10 @@ main {
     grid-template-columns: 1fr;
     gap: 3em;
   }
+  .hero-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .card img {
   object-fit: cover;
