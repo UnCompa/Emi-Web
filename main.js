@@ -1,5 +1,3 @@
-console.log('Hello World!');
-
 ScrollReveal().reveal('.card', {
   origin: "left",
   distance: "100px",
