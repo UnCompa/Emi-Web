@@ -1,7 +1,7 @@
 const audio = new Plyr('audio', {
   accentColor: "#0af"
 });
-const player = new Plyr('video', {
+const player = new Plyr('#video', {
   controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
   accentColor: '#ff0000'
 });
