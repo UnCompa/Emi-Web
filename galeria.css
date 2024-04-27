@@ -18,7 +18,7 @@
 body {
   font-family: "Indie Flower", cursive;
   background-image: url("./imgs/back5.jpg");
-  background-size: 100%;
+  background-size: cover;
 }
 .hero {
   background: var(--color-blanco);

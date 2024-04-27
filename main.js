@@ -11,7 +11,7 @@ ScrollReveal().reveal('.card-img', {
 })
 
 var options = {
-  strings: ['Una chica apasionada por lo que hace, excelente jugadora, y una gran amiga'], // Texto que se escribirá
+  strings: ['La mejor chica que puedes conocer ❤'], // Texto que se escribirá
   typeSpeed: 20,
   loop: false, // Establece si quieres que el texto se repita después de escribirlo
   cursorChar: '',
